@@ -1,6 +1,6 @@
 javascript
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ["class"],
   content: [
     "./index.html",
@@ -15,7 +15,7 @@ export default {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        ring: "var(--ring)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
